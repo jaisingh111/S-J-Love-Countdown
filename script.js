@@ -32,7 +32,7 @@ const captions = {
   "2025-12-29": "In a world full of almosts, you are my ‘always’. ♾️",
   "2025-12-30": "Your face is my favourite notification that life is good. 📱💗",
   "2025-12-31": "No new year wish beats another 365 days of you and me. 🎆",
-  "2026-01-01": "Starting the year with your smile feels like cheating at life. 🎇",
+  "2026-01-01": "Starting the year with your smile feels like I won in life. 🎇",
   "2026-01-02": "I fall in love with you quietly, in all our silly little moments. 💫",
   "2026-01-03": "Home isn’t a place any more, it’s the space between your arms. 🏡",
   "2026-01-04": "You’re the soft ‘it’s okay’ behind all my chaos. 🌙",
