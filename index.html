@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>To my darling beautiful amazing gorgeous wife the countdown till you are home begins ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- App manifest for installable experience -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- iPhone / iPad home screen icon -->
+  <link rel="apple-touch-icon" href="S_heart_J_icon.png">
+
+  <!-- iOS full-screen web app settings -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+</head>
+<body>
+  <div id="hearts-container" class="hearts-container"></div>
+  <div class="app">
+    <header>
+      <h1>To my darling beautiful amazing gorgeous wife the countdown till you are home begins ❤️</h1>
+      <div class="poem-box">
+        <p id="rotating-poem" class="subtitle"></p>
+      </div>
+    </header>
+    <section class="love-top-section">
+      <div class="reminder-section">
+        <h2>Today&apos;s reminder that I love you</h2>
+        <div class="reminder-card">
+          <p id="daily-reminder-text"></p>
+        </div>
+      </div>
+
+      <div class="open-when-section">
+        <h2>Open when…</h2>
+        <div class="open-when-buttons">
+          <button class="open-when-btn" data-open-when="miss">💌 You miss me</button>
+          <button class="open-when-btn" data-open-when="stressed">💌 You feel stressed</button>
+          <button class="open-when-btn" data-open-when="cantSleep">💌 You can&apos;t sleep</button>
+          <button class="open-when-btn" data-open-when="needSmile">💌 You need a smile</button>
+          <button class="open-when-btn" data-open-when="lonely">💌 You feel lonely</button>
+        </div>
+        <div class="open-when-message">
+          <p id="open-when-text">Tap an envelope to open a little letter from me. 💌</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="love-letter-section">
+      <button id="open-love-letter" class="love-letter-btn">Read my love letter to you 💌</button>
+    </section>
+
+    <section class="feelings-section">
+      <h2>How are you feeling today</h2>
+      <div class="feelings-row">
+        <div class="feeling-card">
+          <h3>My Wife</h3>
+          <textarea id="feeling-wife" placeholder="Write how you're feeling today..."></textarea>
+          <button id="feeling-wife-post" class="feeling-post-btn">Post</button>
+          <div class="feeling-posted">
+            <span class="feeling-posted-label">Last message:</span>
+            <p id="feeling-wife-display" class="feeling-posted-text">Nothing posted yet.</p>
+          </div>
+        </div>
+        <div class="feeling-card">
+          <h3>My Husband</h3>
+          <textarea id="feeling-husband" placeholder="Write how you're feeling today..."></textarea>
+          <button id="feeling-husband-post" class="feeling-post-btn">Post</button>
+          <div class="feeling-posted">
+            <span class="feeling-posted-label">Last message:</span>
+            <p id="feeling-husband-display" class="feeling-posted-text">Nothing posted yet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="hug-section">
+      <button id="hug-button" class="hug-btn">Tap here for a hug 🤍</button>
+      <div id="hug-overlay" class="hug-overlay hidden">
+        <div class="hug-overlay-inner">
+          <p>This is me hugging you right now until I can do it for real. 🤍</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="clocks-section">
+      <div class="clocks-row">
+        <div class="clock-card">
+          <h3>UK</h3>
+          <p id="clock-uk" class="clock-time">--:--:--</p>
+          <p class="clock-zone">London</p>
+        </div>
+        <div class="clock-card">
+          <h3>Dubai</h3>
+          <p id="clock-dubai" class="clock-time">--:--:--</p>
+          <p class="clock-zone">Gulf Standard Time</p>
+        </div>
+        <div class="clock-card">
+          <h3>India</h3>
+          <p id="clock-india" class="clock-time">--:--:--</p>
+          <p class="clock-zone">India Standard Time</p>
+        </div>
+      </div>
+
+      <div class="progress-wrapper">
+        <p class="progress-title">Countdown until you are back in the UK</p>
+        <div class="progress-bar">
+          <div id="trip-progress-fill" class="progress-fill"></div>
+        </div>
+        <p id="trip-progress-label" class="progress-label"></p>
+      </div>
+    </section>
+
+
+    <section class="ring-section">
+      <div class="ring-card">
+        <div class="rings-pair">
+          <span class="ring-emoji ring-left">💍</span>
+          <span class="ring-emoji ring-right">💍</span>
+        </div>
+        <p class="ring-text">My forever and always to infinity and beyond and beyond is you.</p>
+      </div>
+      <p class="ring-caption">You and me, forever and always to infinity and beyond and beyond – 6th of Jan 2026 is a special day.</p>
+    </section>
+
+
+    <section class="reasons-section">
+      <h2>100 little reasons I love you</h2>
+      <div class="reasons-card">
+        <p id="reason-text"></p>
+        <div class="reasons-controls">
+          <button id="prev-reason" class="reason-btn" aria-label="Previous reason">←</button>
+          <span id="reason-count" class="reason-count"></span>
+          <button id="next-reason" class="reason-btn" aria-label="Next reason">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="calendar-section">
+      <div class="calendar-header">
+        <button id="prev-month" class="nav-btn" aria-label="Previous month">&larr;</button>
+        <h2 id="month-label"></h2>
+        <button id="next-month" class="nav-btn" aria-label="Next month">&rarr;</button>
+      </div>
+
+      <div class="calendar">
+        <div class="weekday">Mon</div>
+        <div class="weekday">Tue</div>
+        <div class="weekday">Wed</div>
+        <div class="weekday">Thu</div>
+        <div class="weekday">Fri</div>
+        <div class="weekday">Sat</div>
+        <div class="weekday">Sun</div>
+
+        <!-- Days get injected here by script.js -->
+        <div id="calendar-days" class="calendar-days"></div>
+      </div>
+    </section>
+
+    <div class="mascot">
+      <div class="mascot-face">🧸</div>
+      <div class="mascot-bubble" id="mascot-text"></div>
+    </div>
+
+    <footer>
+      <p>Made for my wife while she's in Dubai 🥹💖</p>
+    </footer>
+  </div>
+
+  <!-- Modal for full-size photo -->
+  <div id="photo-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button id="close-modal" class="close-btn" aria-label="Close">&times;</button>
+      <img id="modal-image" src="" alt="Us 💕" />
+      <p id="modal-caption"></p>
+    </div>
+  </div>
+
+
+  <div id="love-letter-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content love-letter-modal-content">
+      <button id="close-love-letter" class="close-btn" aria-label="Close">&times;</button>
+      <div class="love-letter-body">
+        <h2>My love letter to you</h2>
+        <p>
+          I love you forever and always to infinity and beyond and beyond you are my life and more and without you I am nothing.
+          You have no idea how much you mean to me how much I care for you and what I will do for you.
+          You are my love my soul mate my wife my everything and without you I am nothing.
+          I have no purpose inside life if you are not with me.
+          I need you back home back to me I need to feel you hug you hold you hear your voice.
+          You mean so much to me, nothing is every too much for me nothing I want everything I want every single version every single part of you there is no fear no emotions that I do not want I want it all because you deserve to be put first and deserve to be loved like the movies and I will do everything I can and more to give you everything you have ever wished for inside life.
+          Just remember that no matter where you are and what time zone you are in you will always be babied you will always be loved you will always be number 1 priority my number 1 responsibility you will always have my heart my soul we are connected we are soul mates I truly have found the person I was begging wishing praying for to god.
+          I cannot wait for the 2026 I cannot wait till you are back inside my arms I cannot wait to meet parents 6th of Jan is going to be a special day because its when we become Official.
+          Official or not Religious ceremony or not we are married you are my wife I am your husband.
+          You are my everything I love you so much my beautiful amazing princess pookie wookie wife ❤️❤️❤️❤️
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Firebase SDKs for synced feelings (replace config in the script below) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script>
+    // TODO: Replace this config with your own Firebase project config.
+    // Go to Firebase console > Project settings > "Your apps" > Web app
+    // and copy the config object here.
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDolA-WqtVqWkdduBTVukaVj95uFisVx7U",
+  authDomain: "fir-j-love-calendar.firebaseapp.com",
+  projectId: "fir-j-love-calendar",
+  storageBucket: "fir-j-love-calendar.firebasestorage.app",
+  messagingSenderId: "1074010674830",
+  appId: "1:1074010674830:web:b13d25260c3da33acd1bdf"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+    };
+
+    if (typeof firebase !== "undefined") {
+      if (firebase.apps.length === 0) {
+        firebase.initializeApp(firebaseConfig);
+      }
+      // global reference used in script.js
+      window.feelingsDatabase = firebase.database();
+    } else {
+      window.feelingsDatabase = null;
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
